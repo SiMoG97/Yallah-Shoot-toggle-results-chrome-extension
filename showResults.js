@@ -11,7 +11,10 @@ const showResultsFunction = (show) => {
       iFrameContainer.querySelector("center").style.display = "none";
     }
     match_live.forEach((elm) => {
-      if (elm.querySelector(".matsh_goal")) {
+      if (
+        elm.querySelector(".matsh_goal") ||
+        elm.querySelector(".matsh_start")
+      ) {
         elm.classList.add("remove_results");
       }
     });
