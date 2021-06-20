@@ -1,7 +1,8 @@
 .remove_results .matsh_live_b span,
 .remove_results .fc_time,
 .remove_results .matsh_goal {
-  display: none;
+  /* display: none; */
+  visibility: hidden;
 }
 .showResultsContainer {
   width: 170px;
