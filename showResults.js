@@ -13,7 +13,10 @@ const showResultsFunction = (show) => {
     match_live.forEach((elm) => {
       if (
         elm.querySelector(".matsh_goal") ||
-        elm.querySelector(".matsh_start")
+        elm.querySelector(".matsh_start") ||
+        elm.querySelector(
+          'li>table>tbody>tr>td:nth-child(1)[align="left"]>span:not(.matsh_non)'
+        )
       ) {
         elm.classList.add("remove_results");
       }

@@ -1,6 +1,7 @@
 .remove_results .matsh_live_b span,
 .remove_results .fc_time,
-.remove_results .matsh_goal {
+.remove_results .matsh_goal,
+.remove_results li > table > tbody > tr > td:nth-child(1)[align="left"] {
   /* display: none; */
   visibility: hidden;
 }
